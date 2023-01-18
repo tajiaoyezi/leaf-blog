@@ -1,0 +1,15 @@
+server:
+  port: 8001
+spring:
+  application:
+    # user服务名称
+    name: leaf-blog-user
+  cloud:
+    nacos:
+      # 注册中心
+      discovery:
+        server-addr: 192.168.200.131:8848
+      # 配置中心
+      config:
+        server-addr: 192.168.200.131:8848
+        file-extension: yml
